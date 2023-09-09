@@ -138,5 +138,6 @@
 (require 'init-org)
 (require 'init-git)
 (require 'init-ivy)
+(require 'init-projectile)
 
 (provide 'init)
