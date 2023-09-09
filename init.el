@@ -135,6 +135,7 @@
 (require 'init-spelling)
 (require 'init-hippie-expand)
 (require 'init-recentf)
+(require 'init-org)
 (require 'init-git)
 (require 'init-ivy)
 
