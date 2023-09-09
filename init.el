@@ -125,9 +125,6 @@
 (save-place-mode 1)
 (setq save-place-forget-unreadable-files nil)
 
-;; recent files
-(add-hook 'after-init-hook 'recentf-mode)
-
 ;; ediff
 (setq ediff-window-setup-function 'ediff-setup-windows-plain
       ediff-split-window-function 'split-window-horizontally
