@@ -136,5 +136,6 @@
 (require 'init-hippie-expand)
 (require 'init-recentf)
 (require 'init-git)
+(require 'init-ivy)
 
 (provide 'init)
