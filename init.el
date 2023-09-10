@@ -136,6 +136,7 @@
       ediff-diff-options "-w")
 
 
+(require 'init-avy)
 (require 'init-winum)
 (require 'init-dired)
 (require 'init-spelling)
