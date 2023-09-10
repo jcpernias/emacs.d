@@ -1,5 +1,12 @@
 ;; init-org.el -*- lexical-binding: t -*-
 
+
+;; htmlize exports the contents of an Emacs buffer to HTML
+;; preserving display properties such as colors, fonts, underlining,
+;; etc.
+(use-package htmlize)
+
+
 (use-package org
   :ensure t
   :mode ("\\.org$" . org-mode)
