@@ -149,5 +149,9 @@
 (require 'init-ivy)
 (require 'init-projectile)
 (require 'init-tex)
+(require 'init-markdown)
+(require 'init-yaml)
+(require 'init-csv)
+(require 'init-gift)
 
 (provide 'init)
