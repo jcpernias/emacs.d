@@ -144,5 +144,6 @@
 (require 'init-yaml)
 (require 'init-csv)
 (require 'init-gift)
+(require 'init-R)
 
 (provide 'init)
