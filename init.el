@@ -136,11 +136,12 @@
       ediff-diff-options "-w")
 
 
+(require 'init-winum)
 (require 'init-dired)
 (require 'init-spelling)
 (require 'init-hippie-expand)
 (require 'init-recentf)
-(require 'init-winum)
+(require 'init-which-key)
 (require 'init-org)
 (require 'init-git)
 (require 'init-ivy)
