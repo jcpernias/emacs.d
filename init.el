@@ -10,15 +10,6 @@
 ;; Ask for confirmation when killing emacs
 (setq confirm-kill-emacs 'y-or-n-p)
 
-;; Visible bell: modeline flash
-;; (defun jcp/flash-mode-line ()
-;;   (invert-face 'mode-line)
-;;   (run-with-timer 0.1 nil #'invert-face 'mode-line))
-
-;; (setq visible-bell nil
-;;       ring-bell-function 'jcp/flash-mode-line)
-
-
 (require 'init-mode-line)
 
 ;; Add a newline at the end of files if there is not already one there
