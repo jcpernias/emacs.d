@@ -7,6 +7,8 @@ INSTALL := /usr/bin/install
 dotemacsdir := $(HOME)/.emacs.d
 elispdir := $(dotemacsdir)/elisp
 
+auctexdir := $(dotemacsdir)/auctex-styles
+
 snippetsdir := $(dotemacsdir)/snippets
 orgsnippetsdir := $(snippetsdir)/org-mode
 
@@ -18,9 +20,12 @@ lispfiles := \
 
 orgsnippets := $(wildcard snippets/org-mode/*)
 
+auctexfiles := $(wildcard auctex-styles/*)
+
 all_deps := \
 	$(addprefix $(dotemacsdir)/,$(lispfiles)) \
-	$(addprefix $(dotemacsdir)/,$(orgsnippets))
+	$(addprefix $(dotemacsdir)/,$(orgsnippets)) \
+	$(addprefix $(dotemacsdir)/,$(auctexfiles))
 
 all: $(all_deps)
 
@@ -30,12 +35,15 @@ $(dotemacsdir)/%: ./% | installdirs
 
 
 .PHONY:
-installdirs: $(elispdir) $(orgsnippetsdir)
+installdirs: $(elispdir) $(auctexdir) $(orgsnippetsdir)
 
 $(dotemacsdir):
 	$(INSTALL) -m 0755 -d $@
 
 $(elispdir): | $(dotemacsdir)
+	$(INSTALL) -m 0755 -d $@
+
+$(auctexdir): | $(dotemacsdir)
 	$(INSTALL) -m 0755 -d $@
 
 $(snippetsdir):

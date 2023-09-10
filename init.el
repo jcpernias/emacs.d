@@ -148,5 +148,6 @@
 (require 'init-git)
 (require 'init-ivy)
 (require 'init-projectile)
+(require 'init-tex)
 
 (provide 'init)
