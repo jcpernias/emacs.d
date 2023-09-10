@@ -141,6 +141,7 @@
 (require 'init-dired)
 (require 'init-spelling)
 (require 'init-hippie-expand)
+(require 'init-yasnippet)
 (require 'init-recentf)
 (require 'init-which-key)
 (require 'init-org)
