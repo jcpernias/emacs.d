@@ -74,6 +74,11 @@
   (keymap-global-unset "C-z")
   (keymap-global-unset "C-x C-z"))
 
+;; Rebind toggle-frame-fullscreen
+(when (display-graphic-p)
+  (keymap-global-unset "<f11>")
+  (keymap-global-set "C-c x" 'toggle-frame-fullscreen))
+
 ;; Bind zap-up-to-char instead of zap-to-char
 (autoload 'zap-up-to-char "misc"
   "Kill up to, but not including ARGth occurrence of CHAR." t)
