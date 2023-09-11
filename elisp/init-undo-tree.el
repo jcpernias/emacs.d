@@ -2,6 +2,7 @@
 
 (use-package undo-tree
   :delight
+  :demand t
   :bind (("M-z" . undo-tree-undo)
          ("M-Z" . undo-tree-redo))
   :init
