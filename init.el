@@ -3,6 +3,9 @@
 
 
 (require 'init-use-package)
+;; Do not clutter init.el with customize settings:
+(setq custom-file
+      (expand-file-name (concat user-emacs-directory "custom.el")))
 
 (when (eq system-type 'darwin)
   (require 'init-exec-path))
@@ -81,13 +84,6 @@
 ;; abbrevs
 (setq save-abbrevs t)
 
-
-;; Do not clutter init.el with customize settings:
-(setq custom-file
-      (expand-file-name (concat user-emacs-directory "custom.el")))
-(if (file-exists-p custom-file)
-    (load custom-file))
-
 ;; Backup files
 (setq make-backup-files t)
 (setq backup-directory-alist
@@ -145,5 +141,10 @@
 (require 'init-csv)
 (require 'init-gift)
 (require 'init-R)
+
+
+;; Variables configured via the interactive 'customize' interface
+(when (file-exists-p custom-file)
+  (load custom-file))
 
 (provide 'init)
