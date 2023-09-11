@@ -20,10 +20,7 @@
          ("C-s" . counsel-grep-or-swiper)
          ("C-r" . counsel-grep-or-swiper-backward)
          ("C-x B" . ivy-switch-buffer-other-window)
-         ("C-c C-r" . ivy-resume)
-         ("C-x B" . ivy-switch-buffer-other-window)
-         ("C-x B" . ivy-switch-buffer-other-window)
-         ("C-x B" . ivy-switch-buffer-other-window))
+         ("C-c C-r" . ivy-resume))
 
   :init
   (setq ivy-use-selectable-prompt t)
