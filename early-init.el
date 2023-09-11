@@ -67,7 +67,8 @@
 
 ;; Home computer defaults
 (if jcp/home-p
-    (setq jcp/default-frame-height 52
+    (setq jcp/default-font-height 160
+          jcp/default-frame-height 60
           jcp/default-frame-width 110))
 
 ;; Set default font
