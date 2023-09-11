@@ -2,13 +2,14 @@
 (add-to-list 'load-path (concat user-emacs-directory "elisp"))
 
 
-(require 'init-use-package)
 ;; Do not clutter init.el with customize settings:
 (setq custom-file
       (expand-file-name (concat user-emacs-directory "custom.el")))
 
+(require 'init-use-package)
 (when (eq system-type 'darwin)
   (require 'init-exec-path))
+(require 'init-themes)
 
 ;; Ask for confirmation when killing emacs
 (setq confirm-kill-emacs 'y-or-n-p)

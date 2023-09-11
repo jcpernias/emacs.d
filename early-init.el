@@ -79,6 +79,3 @@
         (width . 100)
         (vertical-scroll-bars . nil)
         (horizontal-scroll-bars . nil)))
-
-;; Load theme
-(load-theme 'deeper-blue t)
