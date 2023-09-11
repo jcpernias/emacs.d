@@ -26,7 +26,7 @@
   (progn
     (setq org-projectile-projects-file
           (concat org-directory "/projects.org"))
-    (ensure-file org-projectile-projects-file)
+    (jcp/ensure-file org-projectile-projects-file)
     (setq org-agenda-files (append org-agenda-files (org-projectile-todo-files)))
     (push (org-projectile-project-todo-entry) org-capture-templates)))
 

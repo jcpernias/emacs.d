@@ -10,6 +10,7 @@
 (when (eq system-type 'darwin)
   (require 'init-exec-path))
 (require 'init-themes)
+(require 'init-functions)
 
 ;; Ask for confirmation when killing emacs
 (setq confirm-kill-emacs 'y-or-n-p)

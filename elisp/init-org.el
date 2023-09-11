@@ -25,7 +25,7 @@
 
   ;; Org notes file
   (setq org-default-notes-file (concat org-directory "/notes.org"))
-  (ensure-file org-default-notes-file)
+  (jcp/ensure-file org-default-notes-file)
 
   ;; Org agenda file list
   (setq org-agenda-files
@@ -36,7 +36,7 @@
                   "/home.org")))
 
   (dolist (path org-agenda-files)
-    (ensure-file path))
+    (jcp/ensure-file path))
 
   (setq org-src-fontify-natively t
         org-src-tab-acts-natively t
