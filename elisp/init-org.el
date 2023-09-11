@@ -44,6 +44,12 @@
         org-use-speed-commands t
         org-log-done t)
 
+  (set-face-attribute 'org-level-1 nil :height 1.75)
+  (set-face-attribute 'org-level-2 nil :height 1.5)
+  (set-face-attribute 'org-level-3 nil :height 1.25)
+  (set-face-attribute 'org-level-4 nil :height 1.1)
+  (set-face-attribute 'org-document-title nil :height 2.0)
+
   ;; Htmlize with css. See the documentation of this variable:
   (setq org-html-htmlize-output-type 'css)
   (add-to-list 'safe-local-variable-values
