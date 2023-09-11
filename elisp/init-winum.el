@@ -1,6 +1,5 @@
 ;; init-winum -*- lexical-binding: t -*-
 
-;; assign number to windows and use M-1 to M-0 to navigate
 (use-package winum
   :init
   (setq window-numbering-scope 'visible
