@@ -1,11 +1,13 @@
 ;; init-markdown.el -*- lexical-binding: t -*-
 
 (use-package markdown-mode
-  :ensure t
   :commands (markdown-mode gfm-mode)
   :mode (;; ("README\\.md\\'" . gfm-mode)
          ;; ("\\.md\\'" . gfm-mode)
          ("\\.markdown\\'" . gfm-mode))
+  :init
+  (setq markdown-enable-math t)
+
   :config
   (setq markdown-asymmetric-header t)
   (setq markdown-code-block-braces t)
