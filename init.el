@@ -124,6 +124,7 @@
       ediff-split-window-function 'split-window-horizontally
       ediff-diff-options "-w")
 
+(require 'init-compile)
 (require 'init-undo-tree)
 (require 'init-avy)
 (require 'init-winum)
