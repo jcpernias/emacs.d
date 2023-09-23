@@ -11,4 +11,7 @@
               (daemonp)))
     (exec-path-from-shell-initialize)))
 
+(unless (getenv "LANG")
+  (setenv "LANG" "es_ES.UTF-8"))
+
 (provide 'init-exec-path)
