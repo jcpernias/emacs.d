@@ -150,4 +150,9 @@
 (when (file-exists-p custom-file)
   (load custom-file))
 
+;; Init emacs start
+(server-start)
+
+
+
 (provide 'init)
