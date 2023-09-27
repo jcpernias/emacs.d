@@ -9,6 +9,8 @@
   (setq ess-help-own-frame 'one)
   ;; uses braces around code block language strings:
   (setq markdown-code-block-braces t)
+  (setq inferior-R-args "--no-save --no-restore")
+  (setq ess-history-file nil)
 
   :config
   (ess-toggle-underscore nil)
