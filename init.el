@@ -83,6 +83,27 @@
 ;; set keyboard shortcut for restart emacs
 (keymap-global-set "C-c r" 'restart-emacs)
 
+;; Some fuctions for quickly changing the width of the current frame:
+(defun jcp/set-selected-frame-width (width)
+  (set-frame-width (selected-frame) width))
+
+(setq jcp/wide-frame-width 172
+      jcp/narrow-frame-width 86)
+
+(defun jcp/widen-frame ()
+  "Widens the selected frame"
+  (interactive)
+  (jcp/set-selected-frame-width jcp/wide-frame-width))
+
+(defun jcp/narrow-frame ()
+  "Shrinks the selected frame"
+  (interactive)
+  (jcp/set-selected-frame-width jcp/narrow-frame-width))
+
+(global-set-key (kbd "C-c w") #'jcp/widen-frame)
+(global-set-key (kbd "C-c s") #'jcp/narrow-frame)
+
+
 ;; abbrevs
 (setq save-abbrevs t)
 
