@@ -13,7 +13,8 @@
   (setq markdown-code-block-braces t)
   (setq markdown-command
         (concat
-         "/usr/local/bin/pandoc"
+         (getenv "HOMEBREW_PREFIX")
+         "/bin/pandoc"
          " --from=markdown --to=html"
          " --standalone --mathjax --highlight-style=pygments")))
 
