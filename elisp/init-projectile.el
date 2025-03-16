@@ -5,12 +5,15 @@
   :delight '(:eval (format " [%s]" (projectile-project-name)))
   :bind (:map projectile-mode-map
               ("C-c p" . projectile-command-map))
+  :hook (after-init . projectile-global-mode)
   :init
   (setq projectile-completion-system 'ivy)
   (setq projectile-switch-project-action #'projectile-dired)
   (setq projectile-project-search-path '(("~/Projects" . 1)))
   :config
-  (projectile-global-mode 1))
+  ;; (projectile-global-mode 1)
+  (projectile-discover-projects-in-search-path)
+  )
 
 (use-package counsel-projectile
   :config
