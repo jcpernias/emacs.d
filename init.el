@@ -172,7 +172,7 @@
   (load custom-file))
 
 ;; Init emacs start
-(server-start)
+;; (server-start)
 
 
 
