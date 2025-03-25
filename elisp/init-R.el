@@ -6,7 +6,7 @@
 
   :init
   (setq ess-ask-for-ess-directory nil)
-  (setq ess-help-own-frame 'one)
+  ;; (setq ess-help-own-frame 'one)
   ;; uses braces around code block language strings:
   (setq markdown-code-block-braces t)
   (setq inferior-R-args "--no-save --no-restore")
