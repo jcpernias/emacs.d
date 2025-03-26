@@ -64,7 +64,7 @@
   (add-to-list 'org-babel-noweb-error-langs "latex")
 
   (defun my-org-confirm-babel-evaluate (lang body)
-    (not (string-match "^\\(R\\|emacs-lisp\\)$" lang)))
+    (not (string-match "^\\(R\\|elisp\\|emacs-lisp\\)$" lang)))
   (setq org-confirm-babel-evaluate 'my-org-confirm-babel-evaluate)
 
   ;; Non-nil means ask for confirmation before executing Emacs Lisp
