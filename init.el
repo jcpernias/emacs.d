@@ -165,6 +165,7 @@
 (require 'init-csv)
 (require 'init-gift)
 (require 'init-R)
+(require 'init-gnuplot)
 
 
 ;; Variables configured via the interactive 'customize' interface
