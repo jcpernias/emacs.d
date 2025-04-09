@@ -69,10 +69,9 @@
 (setq delete-by-moving-to-trash t)
 (setq trash-directory "~/.Trash")  ;; fallback for `move-file-to-trash'
 
-;; Disable C-z in graphical environments
-(when (display-graphic-p)
-  (keymap-global-unset "C-z")
-  (keymap-global-unset "C-x C-z"))
+;; Avoid iconify frame by accident
+(keymap-global-unset "C-z")
+(keymap-global-unset "C-x C-z"))
 
 ;; Rebind toggle-frame-fullscreen
 (when (display-graphic-p)
