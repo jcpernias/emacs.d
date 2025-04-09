@@ -64,6 +64,10 @@
 ;; of the frame’s windows you clicked on
 (setq mouse-yank-at-point t)
 
+;; Send to trash instead of deleting
+;; Adapted from https://christiantietze.de/posts/2021/06/emacs-trash-file-macos/
+(setq delete-by-moving-to-trash t)
+(setq trash-directory "~/.Trash")  ;; fallback for `move-file-to-trash'
 
 ;; Disable C-z in graphical environments
 (when (display-graphic-p)
