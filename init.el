@@ -71,7 +71,7 @@
 
 ;; Avoid iconify frame by accident
 (keymap-global-unset "C-z")
-(keymap-global-unset "C-x C-z"))
+(keymap-global-unset "C-x C-z")
 
 ;; Rebind toggle-frame-fullscreen
 (when (display-graphic-p)
